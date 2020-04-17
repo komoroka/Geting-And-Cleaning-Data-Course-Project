@@ -86,6 +86,6 @@ tidy_data <- data_subset %>% select(-c(ActivityID)) %>% group_by(SubjectID, Acti
 ## write output table 
 setwd('../..')
 
-write.table(tidy_data, 'tidy_data.txt')
+write.table(tidy_data, 'tidy_data.txt', row.names = FALSE)
 
 
